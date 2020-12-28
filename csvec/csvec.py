@@ -397,7 +397,7 @@ class CSVec(object):
             thr = None
         else:
             thr = epsilon * self.l2estimate()
-        # _fingHHS get hhs: HHs = vals.abs() >= thr; hhs = HHs, vals[HHs]  
+        # _fingHHS get hhs: HHs = vals.abs() >= thr; hhs = HHs, vals[HHs]   
         hhs = self._findHHs(k=k, thr=thr)
 
         if k is not None:
